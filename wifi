@@ -1,0 +1,12 @@
+objects = hellofunc.o hellomake.o
+
+myfile : $(objects)
+	gcc -o myfile $(objects)
+ins:
+	./myfile
+
+.PHONY : clean
+clean:
+	rm myfile $(objects)
+
+
